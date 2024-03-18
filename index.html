@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="m-0">
+
+   <header class="sticky bg-white bg-opacity-95 top-0  z-[1000] max-lg: max-sm:">   
+<!-- nav bar! -->
+    <nav id="" class=" p-8 max-sm:p-0 max-[420px]:p-4">
+        <div id="navdiv" class="flex gap-80 justify-center items-center max-lg:gap-60
+         max-[700px]:gap-32  max-md:gap-0">
+            <!-- <div class="items-center block max-lg:order-1"> -->
+            <img class="w-24 max-lg:pl-8 max-md:pl-2 max-md:w-20 max-sm:w-20 max-sm:" src="images/Logon.png" alt="">
+            <!-- </div> -->
+            <div class="flex items-center space-x-14 max-lg:order-2 max-lg:space-x-6 max-sm:space-x-4">
+                <div id="hide" class="flex space-x-14 max-lg:hidden">
+                    <a href="" class="text-darkBlack font-semibold">Destination</a>
+                    <a href="" class="text-darkBlack font-semibold">Hotels</a>
+                    <a href="" class="text-darkBlack font-semibold">Flights</a>
+                    <a href=""class="text-darkBlack font-semibold">Booking</a>    
+                </div>
+                <button class="text-darkBlack max-md:hidden">Login</button>
+                <button class=" text-darkBlack text-sm px-3 py-1 border
+                 rounded-md border-black max-lg: w-24 max-md:hidden">Sign up</button>
+                <div class="">
+                   <button id="Enbtn" class="flex gap-2 ">
+                        <p>EN</p>
+                        &#x25BC
+                    </button>    
+
+                        <div id="en" class=" text-textGray hidden 
+                        transition-all text-sm space-y-2 ">
+                            <p>FRE</p>
+                            <p>POR</p>
+                            <p>GER</p>
+                            <p>POL</p>
+                        </div>
+                </div> 
+            </div>
+
+            <button id="menu-btn" class=" hidden order-3  hamburger mr-1 max-lg:block max-lg:pr-8 max-md:pr-2 max-sm:p-0">
+                <span class="w-6 h-1 hamburger-top rounded-md  bg-darkBlue my-1 mx-auto block"></span>
+                <span class="w-6 h-1 hamburger-middle rounded-md bg-darkBlue my-1 mx-auto block"></span>
+                <span class="w-6 h-1 hamburger-bottom rounded-md bg-darkBlue my-1 mx-auto block"></span>
+            </button>
+
+            <div id="ham-menu" class="flex flex-col space-y-12 hamburgermenu bg-gray-400 
+            bg-opacity-50 w-1/4 h-3/4 max-md:w-2/6 max-[700px]:w-2/5 max-[420px]:w-1/2 max-[420px]:top-[3%]">
+
+                <div class=" p-2 hidden max-md:flex justify-between" >
+                    <button class="text-darkBlack font-bold border border-white w-24 rounded-md px-3 py-1 max-[420px]:w-20">LogIn</button>
+                    <button class=" text-white bg-black text-sm px-3 py-1 border
+                     rounded-md border-black max-lg: w-24 max-[420px]:w-20">Sign up</button>
+                </div>
+
+                <div class=" flex flex-col space-y-10">
+                    <a href="" class="text-darkBlack font-semibold border border-gray">Destination</a>
+                    <a href="" class="text-darkBlack font-semibold  border border-gray">Hotels</a>
+                    <a href="" class="text-darkBlack font-semibold  border border-Gray">Flights</a>
+                    <a href=""class="text-darkBlack font-semibold  border border-gray">Booking</a>    
+                </div>
+
+        </div>
+    </nav>
+<!-- nav end -->
+   </header>
+
+ <!-- hero section -->
+
+<div id="herosection" class="flex justify-between p-16 mt-4 items-center max-lg:flex-col-reverse">
+    <div class=" flex-1 space-y-7 max-lg:my-10 mx-auto text-center">
+        <h3 class="text-darkOrange text-sm font-bold">
+            BEST DESTINATIONS AROUND THE WORLD
+        </h3>
+        <h1 class="text-darkBlue font-bold text-6xl max-md:text-4xl">
+            Travel, enjoy and live a new and full life  
+        </h1>
+        <p class="text-textGray">
+            Built Wicket longer admire do barton vanity itself do in it. 
+            Preferred to sportsmen it engrossed listening. 
+            Park gate sell they west hard for the.
+        </p>
+
+        <div class="flex gap-3 max-lg:flex justify-center">
+            <button class="bg-yellow-400 rounded-lg px-4 py-2
+             text-white">Find out more</button>
+            <button class="text-textGray">Play Demo</button>
+        </div>
+    </div>
+
+    <!-- hero img -->
+    <div>
+        <img class="w-full" src="images/Traveller 1.svg" alt="">
+
+    </div>
+</div>
+<!-- form -->
+<div class="bg-white py-10">
+    <div class=" bg-white space-y-12 w-5/6 shadow-2xl rounded-xl 
+     mx-auto px-0 max-md:w-full
+     max-md:shadow-none">
+        <h2 class="text-center text-2xl text-darkBlue
+         font-semibold">Please fill in your details</h2>
+        <form id="theform" class=" border border-gray-400 p-10 shadow-xl flex flex-col w-1/2
+         my-0 mx-auto space-y-4 max-md:w-3/5 max-sm:w-11/12 " action="" method="post">
+            <label class=" font-semibold" for="name">Your Name:</label>
+            <input id="name" class="border border-black h-8" type="name" required>
+            <label class="font-semibold" for="email">Your email:</label>
+            <input id="email" class="border border-black h-8" type="email" name=""  required>
+            <label class=" font-semibold" for="location">Your Location:</label>
+            <input id="location" class="border border-black h-8" type="text" required>
+            <label class=" font-semibold" for="Destination">Your Destination:</label>
+            <input id="destination" class="border border-black h-8" type="text" required>
+            <div class="flex justify-between text-center my-16 max-md:flex-col max-md:space-y-4">
+                <div> 
+                    <label class=" font-semibold" for="Departure">Date of departure:</label>
+                    <input id="departdate" class="border border-black h-8" type="date" name="" id="" required>
+                </div>
+                <div>
+                    <label class="font-semibold" for="Arrival">Date of arrival:</label>
+                    <input id="arrivedate" class="border border-black h-8" type="date" name="" id="" required>
+                </div>
+            </div>
+            <button class="bg-blue-500 w-1/3 h-12 text-lg text-white
+              mx-auto rounded-lg max-lg:w-3/6" type="submit" id="submitbtn">Submit</button>
+        </form>
+
+        <div id="modal" class="w-5/6  hidden fixed z-[1000]  top-0 overflow-auto mx-auto 
+         h-full bg-gray-100 bg-opacity-80 max-sm:w-full">
+            <div id="modalcontent" class="mx-auto p-6 w-4/5 space-y-5 border
+             bg-white shadow-lg border-gray-300 max-sm:w-full">
+                <div class="flex justify-between items-center">
+                    <div class="mx-auto">
+                        <h2 class="text-2xl font-bold mx-auto text-center text-darkBlue max-sm:text-xl" >Thank You!</h2>
+                        <h2 class="text-2xl font-bold mx-auto text-darkBlue max-sm:text-xl">Your booking details</h2>
+                    </div>
+                    <span id="close" class="font-bold text-gray-400 text-4xl cursor-pointer">&times;</span>   
+                </div>
+                <p id="submittedDetails" class="font-semibold space-y-3"></p>
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<footer class="p-12 mt-20 bg-slate-100">
+    <div class="flex justify-between max-lg:flex-col max-lg:space-y-8 ">
+
+        <div>
+            <div class="flex flex-col space-y-4">
+                <img class="w-24 max-md:w-20" src="images/Logo.svg" alt="">
+                <p class="text-textGray" >Book your trip in minute, get full
+                    Control for much longer.
+                    </p>
+            </div>
+        </div>
+
+
+
+        <div class="flex space-x-5 max-lg:justify-between max-md:flex-wrap max-md: ">
+            <div class="flex flex-col space-y-3 max-sm:hidden">
+                <h3 class="font-bold">Company</h3>
+                <div class="flex flex-col space-y-1">
+                    <a class="text-textGray" href="">About</a>
+                    <a class="text-textGray" href="">Careers</a>
+                    <a class="text-textGray" href="">Mobile</a>
+                </div>
+            </div>
+    
+            <div class="flex flex-col space-y-3 max-sm:hidden">
+                <h3 class="font-bold">Contact</h3>
+                <div class="flex flex-col space-y-1">
+                    <a class="text-textGray" href="">Help/FAQ</a>
+                    <a class="text-textGray" href="">Press</a>
+                    <a class="text-textGray" href="">Affiliates</a>
+                </div>
+            </div>
+    
+    
+            <div class="flex flex-col space-y-3 max-sm:hidden">
+                <h3 class="font-bold">More</h3>
+                <div class="flex flex-col space-y-1">
+                    <a class="text-textGray" href="">Airlinefees</a>
+                    <a class="text-textGray" href="">Airline</a>
+                    <a class="text-textGray" href="">Low fare tips</a>
+                </div>
+            </div>
+    
+            <div id="social" class="flex flex-col text-center space-y-3 max-sm:hidden">
+                <div class=" flex space-x-1 max-md:">
+                    <img src="images/fb.svg" alt="">
+                    <img src="images/Social.png" alt="">
+                    <img src="images/x.svg" alt="">
+                </div>
+                <div>
+                    <p class="text-textGray">Discover our app</p>
+                </div>
+            </div>
+
+            <div class="hidden max-sm:block max-sm:w-full max-sm:space-y-6">
+                <div class="flex justify-between">
+                    <h3 class="font-bold">Company</h3>
+                    <p> &#x25BC</p>
+                </div>
+    
+                <div class=" flex justify-between">
+                    <h3 class="font-bold">Contact</h3>
+                    <p> &#x25BC</p>
+                </div>
+    
+    
+                <div class="flex justify-between">
+                    <h3 class="font-bold">More</h3>
+                    <p>&#x25BC</p>
+                </div>
+            </div>
+
+    
+        </div>
+
+
+
+
+    </div>
+
+
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
